@@ -1,0 +1,11 @@
+<div class="tx-yag-theme-jdav-gallerycontainer">
+    <f:for each="{listData}" key="rowIndex" as="listRow">
+        <h2>{listRow.gallery.value.name}</h2>
+        <div class="tx-yag-theme-jdav-albumscontainer">
+            <f:for each="{listRow.gallery.value.albums}" key="albumIndex" as="album">
+                <f:render partial="EXT:yag_theme_jdavbw/Resources/Private/Partials/AlbumThumb.html" arguments="{album : album, yagContext : yagContext}" />
+            </f:for>
+        </div>
+    </f:for>
+    <div style="clear:both;">&nbsp;</div>   
+</div>

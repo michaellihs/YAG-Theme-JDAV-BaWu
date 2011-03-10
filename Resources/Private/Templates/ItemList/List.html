@@ -1,0 +1,18 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+<h2>{album.name}</h2>
+
+<div class="tx-yag-theme-jdavbw-imagecontainer">
+    <f:for each="{listData}" key="rowIndex" as="listRow">       
+        <f:render partial="{config.itemListConfig.imageThumbPartial}" 
+          arguments="{config: config, image: listRow.image.value, 
+            rowIndex: listRow.specialValues.absoluteRowIndex, 
+            pager: pager, pagerCollection:pagerCollection}" />
+    </f:for>    
+</div>
+
+<div class="tx-yag-pager">
+    <f:render partial="Pager" arguments="{action: 'list', controller: 'ItemList', pager: pager, pagerCollection: pagerCollection, itemsText: 'images'}" />
+</div>
+<br />
+
+<f:link.action controller="Gallery" action="list">Zur&uuml;ck zur Gallery-Liste</f:link.action>

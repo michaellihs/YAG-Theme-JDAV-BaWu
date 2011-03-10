@@ -1,0 +1,7 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+<div class="tx-yag-theme-jdavbw-albumthumb  {f:if(condition: album.thumb.isLandscape, then:'tx-yag-theme-jdavbw-thumb-landscape', else:'tx-yag-theme-jdavbw-thumb-portrait')}">
+    <yag:link.album album="{album}">
+        <yag:image item="{album.thumb}" resolutionName="thumb" />
+        <div class="tx-yag-theme-jdavbw-albumcaption">{album.name} ({album.itemCount})</div>
+    </yag:link.album>
+</div>

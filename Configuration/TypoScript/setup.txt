@@ -1,0 +1,48 @@
+####################################################
+# YAG theme JDAV BaWŸ
+#
+# @author Daniel Lienert <daniel@lienert.cc> 
+# @author Michael Knoll <knoll@punkt.de>
+####################################################
+
+# Include CSS for this theme
+page.includeCSS.yag_theme_simpleBlog = EXT:yag_theme_jdavbw/Resources/Public/CSS/styles.css
+
+# Copy default settings from default theme
+plugin.tx_yag.settings.themes.jdavbw < plugin.tx_yag.settings.themes.default
+
+# Some theme-specific settings
+plugin.tx_yag.settings.themes.jdavbw {
+
+   resolutionConfigs {
+   
+      thumb {
+         width = 150
+         height = 150
+         quality = 
+      }
+      
+      lightbox {
+         width = 1200
+         height = 800
+      }
+      
+   }
+
+   controller {
+   
+      ItemList {
+         list.template = EXT:yag_theme_jdavbw/Resources/Private/Templates/ItemList/List.html
+      }
+      
+      Gallery {
+         list.template = EXT:yag_theme_jdavbw/Resources/Private/Templates/Gallery/List.html
+      }
+      
+   }
+
+   itemList {
+      imageThumbPartial = EXT:yag_theme_jdavbw/Resources/Private/Partials/ImageThumb.html
+   }
+   
+}

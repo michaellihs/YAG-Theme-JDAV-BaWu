@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+div.tx-yag-theme-jdav-albumscontainer:after {
+	content: "."; 
+    display: block; 
+    height: 0;
+    clear: both; 
+    visibility: hidden;
+}
+
+div.tx-yag-theme-jdavbw-imagecontainer:after {
+    content: "."; 
+    display: block; 
+    height: 0;
+    clear: both; 
+    visibility: hidden;
+}
+
+div.tx-yag-theme-jdavbw-thumb {
+	text-align: center;
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+div.tx-yag-theme-jdavbw-albumthumb {
+    text-align: center;
+    float: left;
+    height: 170px;
+    width: 150px;
+    margin: 10px 10px;
+    padding: 24px;
+    overflow: hidden;
+}
+
+div.tx-yag-theme-jdavbw-thumb ul {
+    display: none;	
+}
+
+div.tx-yag-theme-jdavbw-thumb img {
+    border: 1px solid;
+    border-color: #444 #AAA #AAA #444;
+}
+
+div.tx-yag-theme-jdavbw-albumthumb ul {
+    display: none;  
+}
+
+div.tx-yag-theme-jdavbw-albumthumb img {
+    border: 1px solid;
+    border-color: #444 #AAA #AAA #444;
+}
+
+div.tx-yag-theme-jdavbw-thumb-landscape img {
+    height: 100px;
+    width: 150px;
+    margin: 25px 0;
+}
+
+div.tx-yag-theme-jdavbw-thumb-portrait img {
+    height: 150px; 
+    width: 100px;
+    margin: 0 25px;
+}
