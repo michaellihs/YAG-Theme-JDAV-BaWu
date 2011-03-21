@@ -65,3 +65,9 @@ div.tx-yag-theme-jdavbw-thumb-portrait img {
     width: 100px;
     margin: 0 25px;
 }
+
+div.tx-yag-theme-simpleblog-thumb-square img {
+    height: 200px; 
+    width: 200px;
+    margin: 0;
+}
