@@ -1,12 +1,12 @@
 {namespace yag=Tx_Yag_ViewHelpers}
 <f:if condition="{album.thumb.width} > {album.thumb.height}">
-    <div class="tx-yag-theme-simpleblog-thumb tx-yag-theme-simpleblog-thumb-landscape">
+    <div class="tx-yag-theme-jdavbw-thumb tx-yag-theme-jdavbw-landscape">
 </f:if>
 <f:if condition="{album.thumb.width} < {album.thumb.height}">
-    <div class="tx-yag-theme-simpleblog-thumb tx-yag-theme-simpleblog-thumb-portrait">
+    <div class="tx-yag-theme-jdavbw-thumb tx-yag-theme-jdavbw-thumb-portrait">
 </f:if>
 <f:if condition="{album.thumb.width} == {album.thumb.height}">
-    <div class="tx-yag-theme-simpleblog-thumb tx-yag-theme-simpleblog-thumb-square">
+    <div class="tx-yag-theme-jdavbw-thumb tx-yag-theme-jdavbw-thumb-square">
 </f:if>
     <yag:link.album album="{album}">
         <yag:image item="{album.thumb}" resolutionName="thumb" />
