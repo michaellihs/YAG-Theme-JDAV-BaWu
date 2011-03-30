@@ -17,14 +17,14 @@ plugin.tx_yag.settings.themes.jdavbw {
    resolutionConfigs {
    
       thumb {
-         width = 150
-         height = 150
+         maxW = 150
+         maxH = 150
          quality = 
       }
       
       lightbox {
-         width = 1200
-         height = 800
+         maxW = 1200
+         maxH = 800
       }
       
    }
