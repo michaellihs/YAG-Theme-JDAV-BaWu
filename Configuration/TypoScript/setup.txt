@@ -1,5 +1,5 @@
 ####################################################
-# YAG theme JDAV BaWŸ
+# YAG theme JDAV BaWï¿½
 #
 # @author Daniel Lienert <daniel@lienert.cc> 
 # @author Michael Knoll <knoll@punkt.de>
@@ -18,7 +18,7 @@ plugin.tx_yag.settings.themes.jdavbw {
    includeLibCSS = jQueryShadowBox
 
    resolutionConfigs {
-   
+
       thumb {
          maxW = 150
          maxH = 150
